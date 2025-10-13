@@ -1,0 +1,27 @@
+.footer {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    display: grid;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.footer img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.copy-right {
+  color: rgb(59, 59, 59);
+}

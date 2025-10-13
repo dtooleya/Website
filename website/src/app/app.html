@@ -1,8 +1,8 @@
 <div class="background">
-  <app-header></app-header> {{selectedPage}}
+  <!-- <app-header></app-header> -->
   <app-nav-bar (selectedPage)="setSelectedPage($event)"></app-nav-bar>
 
-  <div class="content">
+  <div class="content" [ngStyle]="{'display': loading ? 'none' : 'block'}">
   @if (selectedPage === 'Contact') {
     <app-contact></app-contact>
   }
@@ -15,5 +15,9 @@
   @if (selectedPage === 'Projects') {
     <app-projects></app-projects>
   }
+    @if (selectedPage === 'Hobbies') {
+    <app-hobbies></app-hobbies>
+  }
   </div>
+  <app-footer></app-footer>
 </div>

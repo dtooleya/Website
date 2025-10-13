@@ -1,0 +1,21 @@
+img {
+    max-width: 40px;
+    max-height: 40px;
+    display: block;
+}
+
+.work-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.work-header span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 8px;
+}
