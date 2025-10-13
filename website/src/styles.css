@@ -1,25 +1,26 @@
 .content-body {
   flex: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 80vw;
   padding: 5px 20px 20px 20px;
   box-sizing: border-box;
   color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  width: 50vw;
 }
 
 .content-body h1 {
+  width: 70vw;
   font-size: 2.5em;
   margin-bottom: 10px;
   background-color: #8b0000CC;
   color:  white;
   box-shadow: #707070 0px 2px 8px;
-  padding: 10px;
+  padding: 15px;
   animation: slideIn 0.5s ease-in both; 
 }
 
 .content-body .body {
+  width: 70vw;
   font-size: 1.2em;
   line-height: 1.6;
   margin-top: 10px;
@@ -36,3 +37,12 @@
   from { transform: translateX(-200px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
+
+
+.mdc-tab-indicator{
+    color: #8b0000 !important;
+ }
+
+ .mat-mdc-tab-label-container {
+  border-bottom: none !important;
+ }

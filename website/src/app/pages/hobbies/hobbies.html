@@ -1,10 +1,43 @@
 <div class="content-body">
     <h1>Hobbies</h1>
     <div class="body">
-            <mat-tab-group>
-        <mat-tab label="Rate Your Music"> Content 1 </mat-tab>
-        <mat-tab label="Letterboxd"> Content 2 </mat-tab>
-        <mat-tab label="1001 Albums"> Content 3 </mat-tab>
-    </mat-tab-group>
+        <mat-tab-group>
+            <mat-tab label="Rate Your Music">
+                <div style="margin-top: 10px;">I am a big fan of cataloging and rating albums</div>
+                <div>Here is my Rate Your Music profile:</div>
+                <div style="margin-bottom: 10px;"><a href="https://rateyourmusic.com/~tacomanjoe" target="_blank"
+                        rel="noopener noreferrer">https://rateyourmusic.com/~tacomanjoe</a></div>
+            </mat-tab>
+            <mat-tab label="Letterboxd">
+                <div style="margin-top: 10px;">I also love cataloging and rating movies</div>
+                <div>Here is my Letterboxd profile:</div>
+                <div style="margin-bottom: 10px;"><a href="https://letterboxd.com/tacomanjoe/" target="_blank"
+                        rel="noopener noreferrer">https://letterboxd.com/tacomanjoe/</a></div>
+            </mat-tab>
+            <mat-tab label="1001 Albums">
+                <div style="margin-top: 10px;">This site: 1001albumsgenerator.com, generates one album each day to be rated on a scale from 1 to 5 over
+                    the course of three years. I’ve been using it to discover new music and revisit albums I’ve already heard.</div>
+                <div style="margin-bottom: 10px;">I have currently rated {{albumCount}} albums, but here are the 10 most reccent albums I have rated:
+                </div>
+                <table style="width: 100%;">
+                    <tr style="text-align: left;">
+                        <th>Album</th>
+                        <th>Artist</th>
+                        <th>Year</th>
+                        <th>My Rating</th>
+                        <th>Global Rating</th>
+                    </tr>
+                    @for (album of albums; track album) {
+                    <tr>
+                        <td>{{ album.title }}</td>
+                        <td>{{ album.artist }}</td>
+                        <td>{{ album.year }}</td>
+                        <td>{{ album.myRating }}</td>
+                        <td>{{ album.globalRating }}</td>
+                    </tr>
+                    }
+                </table>
+            </mat-tab>
+        </mat-tab-group>
     </div>
 </div>
