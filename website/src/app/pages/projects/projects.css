@@ -9,6 +9,11 @@ img {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    background-color: #2e2e2ecc;
+    padding: 10px;
+    box-shadow: #707070 0px 2px 8px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .work-header span {
@@ -18,4 +23,15 @@ img {
 
 li {
     margin-bottom: 8px;
+}
+
+.dropdown-arrow {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    float: right;
+    filter: invert(1);
+    margin-right: 10px;
 }

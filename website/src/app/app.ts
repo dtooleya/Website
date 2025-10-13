@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Header } from "./components/header/header";
 import { NavBar } from "./components/nav-bar/nav-bar";
 import { Contact } from "./pages/contact/contact";
 import { Home } from "./pages/home/home";
@@ -11,7 +10,7 @@ import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, NavBar, Contact, Home, About, Projects, NgStyle, Hobbies, Footer],
+  imports: [NavBar, Contact, Home, About, Projects, NgStyle, Hobbies, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

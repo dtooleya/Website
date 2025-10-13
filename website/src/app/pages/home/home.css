@@ -1,0 +1,16 @@
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  flex: 65%;
+}
+.profile-pic:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+
+.body span {
+    padding-left: 10px;
+}

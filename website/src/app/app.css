@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-.background {
-  background: linear-gradient(360deg, #d4d4d4 0%, #ffffff 100%);
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,6 +8,26 @@
   box-sizing: border-box;
   position: absolute;
   left: 0;
-    right: 0;
+  right: 0;
   top: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.1;
+  background-image: url('/assets/images/website.png');
+  background-repeat: repeat;
+  animation: spin 120s linear infinite;
+  top: -1000px;
+  left: -1000px;
+  right: -1000px;
+  bottom: -1000px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+  
 }

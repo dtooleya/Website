@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './projects.css'
 })
 export class Projects {
+  showCubic = false;
+  showRsa = false;
+  showWebsite = false;
 }
