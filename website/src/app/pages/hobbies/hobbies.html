@@ -23,7 +23,8 @@
                         style="height: 50px; margin-right: 10px; margin-top: 15px;" />
                     <div style="margin-left: 10px;">
                         <div style="margin-top: 10px;">Another thing I love to do in my free time is to watch movies.
-                              I mostly use Letterboxd to keep track of my ever-expanding watchlist, but I have over 500 films logged and
+                            I mostly use Letterboxd to keep track of my ever-expanding watchlist, but I have over 500
+                            films logged and
                             you can check those out here:
                         </div>
                         <div style="margin-bottom: 10px;"><a href="https://letterboxd.com/tacomanjoe" class="link"
@@ -33,33 +34,36 @@
                 </div>
             </mat-tab>
             <mat-tab label="1001 Albums">
-                <div style="margin-top: 10px;">This site: 
-                    <a href="https://1001albumsgenerator.com/" class="link" target="_blank" rel="noopener noreferrer">1001albumsgenerator.com</a>,
-                    generates one album each day to be
-                    rated on a scale from 1 to 5 over
-                    the course of three years. I’ve been using it to discover new music and revisit albums I’ve already
-                    heard. I have currently rated <span
-                        style="font-weight: bold;">{{albumCount}}</span>
-                    albums, but here are the 10 most recent albums I have rated:
+                <div style="padding: 10px;">
+                    <div style="margin-top: 10px; margin-bottom: 10px">This site:
+                        <a href="https://1001albumsgenerator.com/" class="link" target="_blank"
+                            rel="noopener noreferrer">1001albumsgenerator.com</a>,
+                        generates one album each day to be
+                        rated on a scale from 1 to 5 over
+                        the course of three years. I’ve been using it to discover new music and revisit albums I’ve
+                        already
+                        heard. I have currently rated <span style="font-weight: bold;">{{albumCount}}</span>
+                        albums, but here are the 10 most recent albums I have rated:
+                    </div>
+                    <table style="width: 100%;">
+                        <tr style="text-align: left;">
+                            <th>Year</th>
+                            <th>Album</th>
+                            <th>Artist</th>
+                            <th>My Rating</th>
+                            <th>Global Rating</th>
+                        </tr>
+                        @for (album of albums; track album) {
+                        <tr>
+                            <td>{{ album.year }}</td>
+                            <td>{{ album.title }}</td>
+                            <td>{{ album.artist }}</td>
+                            <td>{{ album.myRating }}</td>
+                            <td>{{ album.globalRating }}</td>
+                        </tr>
+                        }
+                    </table>
                 </div>
-                <table style="width: 100%;">
-                    <tr style="text-align: left;">
-                        <th>Year</th>
-                        <th>Album</th>
-                        <th>Artist</th>
-                        <th>My Rating</th>
-                        <th>Global Rating</th>
-                    </tr>
-                    @for (album of albums; track album) {
-                    <tr>
-                        <td>{{ album.year }}</td>
-                        <td>{{ album.title }}</td>
-                        <td>{{ album.artist }}</td>
-                        <td>{{ album.myRating }}</td>
-                        <td>{{ album.globalRating }}</td>
-                    </tr>
-                    }
-                </table>
             </mat-tab>
         </mat-tab-group>
     </div>

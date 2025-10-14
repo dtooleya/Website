@@ -5,3 +5,7 @@ td {
 li {
     max-width: 95%;
 }
+
+tr:hover {
+    background-color: #d3d3d3;
+}
