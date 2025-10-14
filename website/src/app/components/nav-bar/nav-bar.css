@@ -30,11 +30,11 @@ a {
 }
 
 a.selected {
-    background-color: #4b0000;
+    background-color: #972222;
 }
 
 a:hover {
-    background-color: #8b0000;
+    background-color: #ee3232;
 }
 
 @keyframes fadeIn {

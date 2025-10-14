@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.css'
 })
 export class Home {
+  skills = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SQL', 'Java', 'React', 'RxJS', 'And more...'];
 }

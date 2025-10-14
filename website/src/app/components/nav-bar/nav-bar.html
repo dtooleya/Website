@@ -1,8 +1,7 @@
 <nav>
     <div>David Tooley</div>
     <a (click)="onNavClick('Home')" [ngClass]="currentPage === 'Home' ? 'selected' : '' ">Home</a>
-    <a (click)="onNavClick('About')" [ngClass]="currentPage === 'About' ? 'selected' : '' ">About</a>
     <a (click)="onNavClick('Projects')" [ngClass]="currentPage === 'Projects' ? 'selected' : '' ">Projects</a>
     <a (click)="onNavClick('Hobbies')" [ngClass]="currentPage === 'Hobbies' ? 'selected' : '' ">Hobbies</a>
-    <a (click)="onNavClick('Contact')" [ngClass]="currentPage === 'Contact' ? 'selected' : '' ">Contact</a>
+    <a (click)="onNavClick('About')" [ngClass]="currentPage === 'About' ? 'selected' : '' ">About</a>
 </nav>

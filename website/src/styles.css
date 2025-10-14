@@ -45,4 +45,15 @@
 
  .mat-mdc-tab-label-container {
   border-bottom: none !important;
+  font-weight: bold;
  }
+
+ .link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

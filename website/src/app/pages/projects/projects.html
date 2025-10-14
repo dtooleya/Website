@@ -1,10 +1,10 @@
 <div class="content-body">
     <h1>Professional Experience</h1>
     <div class="body">
-        <div class="work-header">
+        <div class="work-header" (click)="showCubic = !showCubic">
             <img src="assets/images/cubic-logo.png" alt="Cubic Logo" />
             <span style> - Cubic Corporation</span>
-            <img src="assets/images/dropdown.png" alt="Dropdown Icon" (click)="showCubic = !showCubic"
+            <img src="assets/images/dropdown.png" alt="Dropdown Icon"
                 [style.transform]="showCubic ? 'rotate(180deg)' : 'rotate(0deg)'" class="dropdown-arrow" />
         </div>
         @if (showCubic) {
@@ -14,19 +14,9 @@
                 imagery download and visualization, serving enterprise defense clients
             </li>
             <li>
-                Led comprehensive migration initiatives from legacy AngularJS to Angular 15+ across
-                multiple large-scale projects, establishing best practices and migration patterns for
-                organizational adoption
-            </li>
-            <li>
                 Designed and implemented a component library of dynamic, reusable Angular modules
-                through systematic refactoring, reducing code duplication by 40% and improving
+                through systematic refactoring, reducing code duplication and improving
                 development velocity
-            </li>
-            <li>
-                Developed RESTful API integrations utilizing Angular's HttpClient and RxJS for reactive
-                programming, implementing advanced patterns including observables, operators, and
-                comprehensive error handling strategies
             </li>
             <li>
                 Engineered sophisticated interactive map-based applications by integrating OpenLayers
@@ -34,43 +24,46 @@
                 WebSockets, Tomcat, and Apache HTTP Server within a Linux environment
             </li>
             <li>
+                Developed RESTful API integrations using Spring Boot to support Angular for reactive
+                programming, enhancing frontend-backend communication and data handling
+            </li>
+            <li>
+                Led comprehensive migration initiatives from legacy AngularJS to Angular 15+ across
+                multiple large-scale projects, establishing best practices and migration patterns for
+                organizational adoption
+            </li>
+            <li>
                 Established comprehensive testing infrastructure and automated testing pipelines,
                 increasing code coverage from 0% to over 80% across multiple projects using Jasmine,
                 Karma, and GitLab CI/CD
-            </li>
-            <li>
-                Collaborated with cross-functional teams including backend engineers, UX designers,
-                and QA specialists in an Agile/Scrum environment to deliver high-quality bi-weekly
-                releases
-            </li>
-            <li>
-                Conducted thorough code reviews, providing technical guidance on Angular patterns,
-                TypeScript best practices, and component architecture design
             </li>
             <li>
                 Developed a React application featuring Cesium-based 3D mapping capabilities for
                 advanced geospatial imagery retrieval and processing
             </li>
             <li>
-                Contributed to full-stack development by creating an Android application as an ATAK
-                plugin and designing backend RESTful APIs using Spring Boot to support Angular
-                frontend requirements
+                Created an Android application as an ATAK plugin utilizing Java and Android Studio, enhancing
+                field operations for defense users
             </li>
         </ul>
         }
-        <div class="work-header">
-            <img src="assets/images/cubic-logo.png" alt="Cubic Logo" />
+        <div class="work-header" (click)="showWebsite = !showWebsite">
+            <img src="assets/images/angular.png" alt="Angular Logo" />
             <span style> - This Website</span>
-            <img src="assets/images/dropdown.png" alt="Dropdown Icon" (click)="showWebsite = !showWebsite"
+            <img src="assets/images/dropdown.png" alt="Dropdown Icon"
                 [style.transform]="showWebsite ? 'rotate(180deg)' : 'rotate(0deg)'" class="dropdown-arrow" />
         </div>
         @if (showWebsite) {
-        <div style="margin-bottom: 10px;">This website was designed entirely by hand using Angular 20. You can find all of the code here.</div>
+        <div style="margin-bottom: 10px; margin-left: 15px;">This website was designed entirely by hand using Angular
+            20. You can find all of the code
+            <a href="https://github.com/dtooleya/Website/tree/main/website/src/app" class="link" target="_blank"
+                rel="noopener noreferrer">here</a>.
+        </div>
         }
-        <div class="work-header">
-            <img src="assets/images/cubic-logo.png" alt="Cubic Logo" />
-            <span style> - RSA</span>
-            <img src="assets/images/dropdown.png" alt="Dropdown Icon" (click)="showRsa = !showRsa"
+        <div class="work-header" (click)="showRsa = !showRsa">
+            <img src="assets/images/rsa-logo.png" alt="RSA Logo" />
+            <span style> - RSA Cybersecurity</span>
+            <img src="assets/images/dropdown.png" alt="Dropdown Icon"
                 [style.transform]="showRsa ? 'rotate(180deg)' : 'rotate(0deg)'" class="dropdown-arrow" />
         </div>
         @if (showRsa) {
