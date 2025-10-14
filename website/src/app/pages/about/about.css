@@ -3,9 +3,21 @@
     width: 334px;
 }
 
-@media all and (max-width: 600px) {
+.crop {
+    text-align: center;
+    margin-right: 20px;
+    float: left;
+}
+
+@media all and (max-width: 700px) {
     .photo {
         height: 325px;
         width: 250px;
+    }
+
+    .crop {
+        float: none;
+        margin: auto;
+        display: block;
     }
 }

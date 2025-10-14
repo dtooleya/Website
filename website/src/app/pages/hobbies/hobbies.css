@@ -29,12 +29,12 @@ td {
     margin: -48px 10px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 722px) {
     .crop {
         width: 250px;
         margin-bottom: 10px;
         float: none;
-        margin-left: 10px;
+        margin: auto;
     }
 
     .photo {
