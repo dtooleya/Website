@@ -1,8 +1,9 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { MatMenuModule } from '@angular/material/menu';
 @Component({
   selector: 'app-nav-bar',
-  imports: [NgClass],
+  imports: [NgClass, MatMenuModule],
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.css'
 })

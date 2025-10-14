@@ -1,21 +1,20 @@
 <div class="content-body">
   <h1>Home</h1>
   <div class="body">
-    <div style="display: flex;">
-      <span style="margin-top: 10px;">
+    <div>
+      <div class="photo">
         <div class="crop">
           <img src="assets/images/photo.png" alt="Profile Picture" class="profile-pic" />
         </div>
-      </span>
-      <span class="intro-text">
-        My name is David Tooley and I am a detail-oriented and passionate frontend software engineer with five years of
+      </div>
+      <span class="intro-text">My name is David Tooley and I am a detail-oriented and passionate frontend software engineer with five years of
         professional experience. I specialize in building scalable, maintainable, and efficient web applications using Angular.
         I also have experience doing full-stack development with Java, Spring Boot, and PostgreSQL,
         and am committed to writing clean, well-tested code and continuously improving my skills. 
       </span>
     </div>
     <div style="margin-top: 10px;">
-      <span style="font-weight: bold; margin-right: 10px">Skills:</span>
+      <span style="font-weight: bold; margin-right: 10px; padding-left: 0px">Skills:</span>
       @for (skill of skills; track skill) {
       <span class="skill-badge">{{ skill }}</span>
       }

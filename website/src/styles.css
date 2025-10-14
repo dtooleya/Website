@@ -5,7 +5,7 @@
   padding: 5px 20px 20px 20px;
   box-sizing: border-box;
   color: rgb(0, 0, 0);
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .content-body h1 {
@@ -13,10 +13,10 @@
   font-size: 2.5em;
   margin-bottom: 10px;
   background-color: #8b0000CC;
-  color:  white;
+  color: white;
   box-shadow: #707070 0px 2px 8px;
   padding: 15px;
-  animation: slideIn 0.5s ease-in both; 
+  animation: slideIn 0.5s ease-in both;
 }
 
 .content-body .body {
@@ -27,50 +27,57 @@
   background-color: rgb(177, 177, 177, 0.5);
   box-shadow: #707070 0px 2px 8px;
   padding: 15px;
-  animation: slideIn 0.5s ease-in both 0.5s; 
+  animation: slideIn 0.5s ease-in both 0.5s;
   max-height: 600px;
-  overflow-x: hidden
-
+  overflow-x: hidden;
+  margin-bottom: 100px;
 }
 
 @keyframes slideIn {
-  from { transform: translateX(-200px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 
-.mdc-tab-indicator{
-    color: #8b0000 !important;
- }
+.mdc-tab-indicator {
+  color: #8b0000 !important;
+}
 
- .mat-mdc-tab-label-container {
+.mat-mdc-tab-label-container {
   border-bottom: none !important;
   font-weight: bold;
- }
+}
 
- .link {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+.link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 ::-webkit-scrollbar {
-  width: 10px; 
-  height: 10px; 
+  width: 10px;
+  height: 10px;
   background-color: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2e2e2ecc; 
-  border-radius: 5px; 
+  background-color: #2e2e2ecc;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #eee; 
+  background-color: #eee;
 }
 
 ::-webkit-scrollbar-corner {
@@ -79,4 +86,11 @@
 
 ::-webkit-scrollbar-button {
   background-color: #ddd;
+}
+
+@media all and (max-width: 600px) {
+  .content-body h1 {
+    font-size: 1em;
+
+  }
 }

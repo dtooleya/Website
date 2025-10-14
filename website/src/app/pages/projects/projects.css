@@ -36,3 +36,10 @@ li {
     filter: invert(1);
     margin-right: 10px;
 }
+
+@media all and (max-width: 600px)
+{
+    .work-header span {
+        font-size: 12px;
+    }
+}

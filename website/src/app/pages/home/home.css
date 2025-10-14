@@ -1,7 +1,7 @@
 .profile-pic {
-    margin: -119px 0 0 -131px;
-    width: 400px;
-    height: 487px;
+  margin: -119px 0 0 -131px;
+  width: 400px;
+  height: 487px;
 }
 
 .crop {
@@ -9,11 +9,10 @@
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
-  flex: 65%;
 }
 
 .crop:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: transform 0.3s ease;
 }
 
@@ -38,11 +37,29 @@
 }
 
 .intro-text {
-  margin-left: 20px;
   margin-top: 10px;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
-  margin-right:25px
+  margin-right: 25px;
+  padding-left: 0px !important;
+}
+
+.photo {
+  margin-top: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px
+}
+
+@media all and (max-width: 600px) {
+  .photo {
+    margin-left: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    margin-right: 0px !important;
+    margin-bottom: 10px;
+  }
 }

@@ -1,0 +1,11 @@
+.photo {
+    height: 437px;
+    width: 334px;
+}
+
+@media all and (max-width: 600px) {
+    .photo {
+        height: 325px;
+        width: 250px;
+    }
+}

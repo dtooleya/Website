@@ -4,4 +4,15 @@
     <a (click)="onNavClick('Projects')" [ngClass]="currentPage === 'Projects' ? 'selected' : '' ">Projects</a>
     <a (click)="onNavClick('Hobbies')" [ngClass]="currentPage === 'Hobbies' ? 'selected' : '' ">Hobbies</a>
     <a (click)="onNavClick('About')" [ngClass]="currentPage === 'About' ? 'selected' : '' ">About</a>
+    
+    <button mat-button [matMenuTriggerFor]="appMenu" class="menu-button">
+        Menu
+    </button>
+
+    <mat-menu #appMenu="matMenu">
+        <button (click)="onNavClick('Home')" mat-menu-item>Home</button>
+        <button (click)="onNavClick('Projects')" mat-menu-item>Projects</button>
+        <button (click)="onNavClick('Hobbies')" mat-menu-item>Hobbies</button>
+        <button (click)="onNavClick('About')" mat-menu-item>About</button>
+    </mat-menu>
 </nav>

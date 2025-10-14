@@ -41,3 +41,37 @@ a:hover {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.menu-button {
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    float: right;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #972222;
+    border: none;
+    border-radius: 5px;
+}
+
+.mat-mdc-menu-item {
+    background-color: white;
+    margin-bottom: -8px
+}
+
+.mat-mdc-menu-item:not([disabled]):hover {
+    background-color: #ee3232;
+    color: white;
+}
+
+@media all and (max-width: 600px) {
+    a {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
