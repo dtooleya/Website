@@ -47,19 +47,6 @@
             </li>
         </ul>
         }
-        <div class="work-header" (click)="showWebsite = !showWebsite">
-            <img src="assets/images/angular.png" alt="Angular Logo" />
-            <span style> - This Website</span>
-            <img src="assets/images/dropdown.png" alt="Dropdown Icon"
-                [style.transform]="showWebsite ? 'rotate(180deg)' : 'rotate(0deg)'" class="dropdown-arrow" />
-        </div>
-        @if (showWebsite) {
-        <div style="margin-bottom: 10px; margin-left: 15px;">This website was designed entirely by hand using Angular
-            20. You can find all of the code
-            <a href="https://github.com/dtooleya/Website/tree/main/website/src/app" class="link" target="_blank"
-                rel="noopener noreferrer">here</a>.
-        </div>
-        }
         <div class="work-header" (click)="showRsa = !showRsa">
             <img src="assets/images/rsa-logo.png" alt="RSA Logo" />
             <span style> - RSA Cybersecurity</span>
@@ -84,6 +71,19 @@
 
             </li>
         </ul>
+        }
+        <div class="work-header" (click)="showWebsite = !showWebsite">
+            <img src="assets/images/angular.png" alt="Angular Logo" />
+            <span style> - This Website</span>
+            <img src="assets/images/dropdown.png" alt="Dropdown Icon"
+                [style.transform]="showWebsite ? 'rotate(180deg)' : 'rotate(0deg)'" class="dropdown-arrow" />
+        </div>
+        @if (showWebsite) {
+        <div style="margin-bottom: 10px; margin-left: 15px;">This website was designed entirely by hand using Angular
+            20. You can find all of the code
+            <a href="https://github.com/dtooleya/Website/tree/main/website/src/app" class="link" target="_blank"
+                rel="noopener noreferrer">here</a>.
+        </div>
         }
     </div>
 </div>

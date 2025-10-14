@@ -1,12 +1,8 @@
 <div class="container">
   <div class="background"></div>
-  <!-- <app-header></app-header> -->
   <app-nav-bar (selectedPage)="setSelectedPage($event)"></app-nav-bar>
 
   <div class="content" [ngStyle]="{'display': loading ? 'none' : 'block'}">
-  @if (selectedPage === 'Contact') {
-    <app-contact></app-contact>
-  }
   @if (selectedPage === 'Home') {
     <app-home></app-home>
   }
