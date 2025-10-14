@@ -16,7 +16,6 @@
   position: fixed;
   z-index: -1;
   opacity: 0.1;
-  background-image: url("/website.png");
   background-repeat: repeat;
   animation: spin 120s linear infinite;
   top: -1000px;

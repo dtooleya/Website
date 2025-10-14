@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="background"></div>
+  <div class="background" style="background-image: url(website.png)"></div>
   <app-nav-bar (selectedPage)="setSelectedPage($event)"></app-nav-bar>
 
   <div class="content" [ngStyle]="{'display': loading ? 'none' : 'block'}">
