@@ -1,7 +1,7 @@
 .profile-pic {
-  margin: -119px 0 0 -131px;
+  margin: -130px 0 0 -131px;
   width: 400px;
-  height: 487px;
+  height: 520px;
 }
 
 .crop {
@@ -60,6 +60,6 @@
     align-items: center;
     float: none;
     margin-right: 0px !important;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }

@@ -1,7 +1,6 @@
 .content-body {
   flex: 1;
   width: 100%;
-  max-width: 80vw;
   padding: 5px 20px 20px 20px;
   box-sizing: border-box;
   color: rgb(0, 0, 0);
@@ -91,6 +90,17 @@
 @media all and (max-width: 600px) {
   .content-body h1 {
     font-size: 1em;
+    width: 83vw !important;
+  }
 
+  .content-body {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    width: 92vw !important;
+
+  }
+
+  .content-body .body {
+    width: 83vw !important;
   }
 }
