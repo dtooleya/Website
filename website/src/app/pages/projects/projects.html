@@ -85,5 +85,14 @@
                 rel="noopener noreferrer">here</a>.
         </div>
         }
+        <div class="work-header" (click)="showSnake = !showSnake" style="display: none !important;">
+            <img src="assets/images/angular.png" alt="Angular Logo" />
+            <span style> - Snake</span>
+            <img src="assets/images/dropdown.png" alt="Dropdown Icon"
+                [style.transform]="showWebsite ? 'rotate(180deg)' : 'rotate(0deg)'" class="dropdown-arrow" />
+        </div>
+        @if (showSnake) {
+        <app-snake></app-snake>
+        }
     </div>
 </div>

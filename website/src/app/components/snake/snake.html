@@ -1,0 +1,9 @@
+<div class="game">
+    @for(row of rows; track row) {
+        @for(col of cols; track col) {
+            <span class="pixel" id="{{col + ',' + row}}"></span>
+        }
+        <br />
+    }
+    <button (click)="startGame()" [disabled]="isRunning">Start Game</button>
+</div>

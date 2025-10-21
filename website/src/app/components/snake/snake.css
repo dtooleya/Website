@@ -1,0 +1,24 @@
+.pixel {
+    background-color: black;
+    width: 10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 10px;
+    display: inline-block;
+}
+
+.pixel.snake {
+    background-color: green;
+}
+
+.pixel.food {
+    background-color: red;
+}
+
+.game {
+    background-color: lightgray;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid black;
+    line-height: 0;
+    user-select: none;}
